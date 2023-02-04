@@ -13,8 +13,7 @@ header ul {
     float: right;
     color: white;
     font-family: "Bebas Neue", display;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 header li {
     display: inline-block;
@@ -27,6 +26,21 @@ header img {
 header p {
     display: inline-block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  header ul {
+    float: none;
+    width: 100%;
+    position: relative;
+    left: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header img {
+    float: none;
+    width: 100%;
+    position: relative;
+  }
 }
 
 /* Hero Image Section */
@@ -57,6 +71,7 @@ header p {
   .content h1 {
     font-family: "Bebas Neue", display;
     font-weight: bold;
+    font-size: xx-large;
 }
   .content p {
     font-family: "Bebas Neue", display;
@@ -68,7 +83,7 @@ header p {
     font-family: "Bebas Neue", display;
     font-size: 15px;
     border-radius: 4px;
-    box-shadow: 5px 10px 18px #221833;
+    box-shadow: 3px 6px 8px #221833;
 }
 
   /* My Skills Section */
@@ -147,12 +162,35 @@ header p {
 }
   .footer-left {
     font-family: "Bebas Neue", display;
-    padding-left: 5px;
+    font-size: 24px;
     font-weight: bold;
     color: white;
   }
+  .navLinks li {
+    position: relative;
+    top: 30px;
+    display: inline-block;
+    padding: 5px;     
+  }
   .footer-right {
-    
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+    position: relative;
+    bottom: 35px;    
+  }
+  .footer-right > div {
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 600px) {
+    .footer-right {
+      padding-right: 10px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .navLinks {
+      padding-left: 10px;
+    }
   }
 
 
