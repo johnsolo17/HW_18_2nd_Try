@@ -113,13 +113,41 @@ header p {
     width: 33%;
     padding: 25px;
 }
+  .breaker {
+    background-color: #533A7B;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-image: linear-gradient(rgba(105, 105, 105, 0.5), rgba(0, 0, 0, 0.5));
+  }
+@media screen and (max-width: 600px) {
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 30px 30px;
+  }
+  .flexContainer div {
+    width: 100%;
+  }
+  .heading {
+    padding: 15px 5px;
+  }
+  .breaker {
+    margin: 100px;
+  }
+}
 
   /* My Work Section */
 
   .myWork {
     padding: 60px 30px;
-    padding-top: 0;
-    background-color: #EBEBEB;
+    padding-top: 10px;
+    background-color: white;
 }
   .workGrid {
     display: grid;
