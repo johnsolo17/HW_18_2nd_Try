@@ -89,6 +89,12 @@ header p {
     border-radius: 4px;
     box-shadow: 3px 6px 8px #221833;
 }
+@media screen and (max-width: 600px) {
+  .heroImg {
+    background-size: cover;
+    background-position: left;
+  }
+}
 
   /* My Skills Section */
 
@@ -212,7 +218,7 @@ header p {
   }
   @media screen and (max-width: 600px) {
     .navLinks {
-      padding-left: 10px;
+      padding-left: 15px;
     }
   }
 
